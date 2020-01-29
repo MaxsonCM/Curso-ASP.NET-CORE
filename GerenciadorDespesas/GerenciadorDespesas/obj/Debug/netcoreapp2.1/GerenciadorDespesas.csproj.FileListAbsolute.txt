@@ -30,3 +30,6 @@ D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netco
 D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\GerenciadorDespesas.dll
 D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\GerenciadorDespesas.pdb
 D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\GerenciadorDespesas.csproj.CopyComplete
+D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\TipoDespesas\Create.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\TipoDespesas\Edit.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\TipoDespesas\Index.g.cshtml.cs
