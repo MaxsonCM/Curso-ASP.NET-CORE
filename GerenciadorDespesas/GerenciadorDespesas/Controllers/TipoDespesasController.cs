@@ -19,11 +19,29 @@ namespace GerenciadorDespesas.Controllers
         }
 
         // GET: TipoDespesas
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             return View(await _context.TipoDespesas.ToListAsync());
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Index(string txtProcurar)
+        {
+            if (!String.IsNullOrEmpty(txtProcurar))
+            {
+                return View(await _context.TipoDespesas.Where(td => td.Nome.ToUpper().Contains(txtProcurar.ToUpper())).ToListAsync());
+            }
+            return View(await _context.TipoDespesas.ToListAsync());
+        }
+
+        public async Task<JsonResult> TipoDespesaExiste(string Nome)
+        {
+            if (await _context.TipoDespesas.AnyAsync(td => td.Nome.ToUpper() == Nome.ToUpper()))
+                return Json("Esse tipo de despesa existe !");
+            
+            return Json(true);
+        }
 
         // GET: TipoDespesas/Create
         public IActionResult Create()
