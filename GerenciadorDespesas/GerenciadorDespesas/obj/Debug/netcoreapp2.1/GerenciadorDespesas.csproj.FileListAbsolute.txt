@@ -36,3 +36,6 @@ D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netco
 D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Salarios\Create.g.cshtml.cs
 D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Salarios\Edit.g.cshtml.cs
 D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Salarios\Index.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Despesas\Create.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Despesas\Edit.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Despesas\Index.g.cshtml.cs
