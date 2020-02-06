@@ -8,7 +8,7 @@
 
 <div class="tabela">
     <div class="container">
-        <h6>Minhas Despesas</h6>
+
         <p>
             <a asp-action="Create" class="btn btn-outline-primary btn-sm">Nova despesa</a>
         </p>
@@ -17,6 +17,28 @@
         {
             <h6 class="alert alert-success">@TempData["Confirmacao"]</h6>
         }
+
+        <div class="row justify-content-md-center">
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label"><strong>Mês</strong></label>
+                <div class="col-sm-9">
+                    <select class="form-control escolhaMes" asp-items="ViewBag.Meses"></select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <partial name="_GastoTotalMes" />
+            </div>
+
+            <div class="col">
+                <partial name="_GastoMes" />
+            </div>
+        </div>
+        <div class="row">            
+            <partial name="_GastoTotais" />            
+        </div>
 
         <div class="tabelaPrincipal">
             <table class="table table-hover">
@@ -89,7 +111,17 @@
 </div>
 
 @section Scripts{
+
+    <script src="~/js/MetodosGerais.js"></script>
+    <script src="~/js/GraficoGastoMes.js"></script>
+    <script src="~/js/GraficoTotalMes.js"></script>
+    <script src="~/js/GraficoGastosTotais.js"></script>
+
     <script>
+        CarregarDadosGastosMes();
+        CarregarDadosGastosTotaisMes();
+        CarregarDadosGastosTotais();
+
         function ExibirModal(id) {
 
             $(".modal").modal();

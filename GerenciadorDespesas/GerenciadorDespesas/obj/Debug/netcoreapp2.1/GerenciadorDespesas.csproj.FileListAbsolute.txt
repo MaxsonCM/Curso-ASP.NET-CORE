@@ -39,3 +39,6 @@ D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netco
 D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Despesas\Create.g.cshtml.cs
 D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Despesas\Edit.g.cshtml.cs
 D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Despesas\Index.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_GastoTotalMes.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_GastoMes.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\GerenciadorDespesas\GerenciadorDespesas\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_GastosTotais.g.cshtml.cs
