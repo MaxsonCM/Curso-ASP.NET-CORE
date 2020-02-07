@@ -36,8 +36,14 @@
                 <partial name="_GastoMes" />
             </div>
         </div>
-        <div class="row">            
-            <partial name="_GastoTotais" />            
+        <div class="row">
+            <partial name="_GastoTotais" />
+        </div>
+
+        <div class="estatisticas">
+            <div class="alert alert-primary">
+                @await Component.InvokeAsync("Estatisticas")
+            </div>
         </div>
 
         <div class="tabelaPrincipal">
