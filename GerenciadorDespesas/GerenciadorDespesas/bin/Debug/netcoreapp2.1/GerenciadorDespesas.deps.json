@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "325056a256017a9c768cec798e555d8f35099e3b"
+    "signature": "7e57143eef5b936d959f42d235b225ea930a30fb"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "GerenciadorDespesas/1.0.0": {
         "dependencies": {
+          "BuildBundlerMinifier": "2.8.391",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -37,6 +38,7 @@
           "GerenciadorDespesas.dll": {}
         }
       },
+      "BuildBundlerMinifier/2.8.391": {},
       "Microsoft.AspNetCore.Mvc.Abstractions/2.1.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Routing.Abstractions": "2.1.1",
@@ -3527,6 +3529,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BuildBundlerMinifier/2.8.391": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JvnXAF6e55QKR9t+UcG/kVcWap22fHeKjkUcrJwl2N3vF/NpohuvZlBceqYF9S8aL8xOx6h+PX2plnymc23kiQ==",
+      "path": "buildbundlerminifier/2.8.391",
+      "hashPath": "buildbundlerminifier.2.8.391.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.Abstractions/2.1.2": {
       "type": "package",
