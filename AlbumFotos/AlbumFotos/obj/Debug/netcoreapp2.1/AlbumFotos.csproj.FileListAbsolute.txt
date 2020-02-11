@@ -25,3 +25,8 @@ D:\PROJETOS\ASP.NET CORE\AlbumFotos\AlbumFotos\obj\Debug\netcoreapp2.1\AlbumFoto
 D:\PROJETOS\ASP.NET CORE\AlbumFotos\AlbumFotos\obj\Debug\netcoreapp2.1\AlbumFotos.dll
 D:\PROJETOS\ASP.NET CORE\AlbumFotos\AlbumFotos\obj\Debug\netcoreapp2.1\AlbumFotos.pdb
 D:\PROJETOS\ASP.NET CORE\AlbumFotos\AlbumFotos\obj\Debug\netcoreapp2.1\AlbumFotos.csproj.CopyComplete
+D:\PROJETOS\ASP.NET CORE\AlbumFotos\AlbumFotos\obj\Debug\netcoreapp2.1\Razor\Views\Albuns\Create.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\AlbumFotos\AlbumFotos\obj\Debug\netcoreapp2.1\Razor\Views\Albuns\Delete.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\AlbumFotos\AlbumFotos\obj\Debug\netcoreapp2.1\Razor\Views\Albuns\Details.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\AlbumFotos\AlbumFotos\obj\Debug\netcoreapp2.1\Razor\Views\Albuns\Edit.g.cshtml.cs
+D:\PROJETOS\ASP.NET CORE\AlbumFotos\AlbumFotos\obj\Debug\netcoreapp2.1\Razor\Views\Albuns\Index.g.cshtml.cs
