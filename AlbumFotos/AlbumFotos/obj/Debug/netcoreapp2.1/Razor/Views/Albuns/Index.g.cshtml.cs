@@ -68,7 +68,7 @@ using AlbumFotos.Models;
             WriteLiteral("\r\n<div class=\"listaDestinos\">\r\n    <div class=\"container\">\r\n        <p>\r\n            ");
             EndContext();
             BeginContext(174, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30be6ebf4e934f889ac949430f55663d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b4bba9069ab436d91a4e6b290ee48e2", async() => {
                 BeginContext(240, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -160,7 +160,7 @@ using AlbumFotos.Models;
             WriteLiteral("\r\n                        </td>\r\n                        <td>\r\n                            ");
             EndContext();
             BeginContext(1392, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "764ace3bdaac4a13849c8e419c2b87aa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9829ef634336429cbecd3041c8ce6831", async() => {
                 BeginContext(1474, 9, true);
                 WriteLiteral("Atualizar");
                 EndContext();
@@ -196,7 +196,7 @@ using AlbumFotos.Models;
             WriteLiteral(" |\r\n                            ");
             EndContext();
             BeginContext(1519, 96, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "841e2e54af644f269ab233060e4526a7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "51c852ad06f5496ab42f1087cbe94a87", async() => {
                 BeginContext(1606, 5, true);
                 WriteLiteral("Fotos");
                 EndContext();
