@@ -16,6 +16,7 @@ namespace MontagemCurriculo.Models
         public string Horario { get; set; }
 
         public int UsuarioId { get; set; }
+
         public Usuario Usuario { get; set; } 
 
     }
