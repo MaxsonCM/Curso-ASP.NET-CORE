@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace MontagemCurriculo.Models
         [Required(ErrorMessage ="Campo obrigatório")]
         [StringLength(50,ErrorMessage ="Use menos caracteres")]
         [EmailAddress(ErrorMessage ="E-mail inválido")]
+        [Remote("UsuarioExiste", "Usuarios")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório")]
