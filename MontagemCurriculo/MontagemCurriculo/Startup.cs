@@ -57,12 +57,6 @@ namespace MontagemCurriculo
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
 
-            using (var escopo = app.ApplicationServices.GetRequiredService<IServiceProvider>().CreateScope())
-            {
-                var contexto = escopo.ServiceProvider.GetRequiredService<Contexto>();
-                contexto.Database.EnsureCreated();
-            }
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

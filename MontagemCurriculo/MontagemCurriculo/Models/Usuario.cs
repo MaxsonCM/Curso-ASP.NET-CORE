@@ -13,7 +13,6 @@ namespace MontagemCurriculo.Models
         [Required(ErrorMessage ="Campo obrigatório")]
         [StringLength(50,ErrorMessage ="Use menos caracteres")]
         [EmailAddress(ErrorMessage ="E-mail inválido")]
-        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório")]
