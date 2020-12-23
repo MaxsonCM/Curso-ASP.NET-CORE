@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MontagemCurriculo.Models;
+using MontagemCurriculo.ViewModels;
 
 namespace MontagemCurriculo.Controllers
 {
@@ -61,8 +62,7 @@ namespace MontagemCurriculo.Controllers
             if (ModelState.IsValid)
             {
                 _context.Add(usuario);
-                await _context.SaveChangesAsync();
-
+                
                 InformacaoLogin informacao = new InformacaoLogin
                 {
                     UsuarioId = usuario.UsuarioId,
@@ -70,6 +70,9 @@ namespace MontagemCurriculo.Controllers
                     Data = DateTime.Now.ToShortDateString(),
                     Horario = DateTime.Now.ToLongTimeString(),
                 };
+
+                _context.Add(informacao);
+                await _context.SaveChangesAsync();
 
                 HttpContext.Session.SetInt32("UsuarioId", usuario.UsuarioId);
 
@@ -86,7 +89,55 @@ namespace MontagemCurriculo.Controllers
             }
             return View(usuario);
         }
-                
+        
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            if (User.Identity.IsAuthenticated)
+                HttpContext.Session.Clear();
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel login)
+        {
+            if (ModelState.IsValid)
+            {
+                if(_context.Usuarios.Any(u => u.Email == login.Email && u.Senha == login.Senha))
+                {
+                    int id = _context.Usuarios.Where(u => u.Email == login.Email && u.Senha == login.Senha).Select(u => u.UsuarioId).Single();
+
+                    InformacaoLogin informacao = new InformacaoLogin
+                    {
+                        UsuarioId = id,
+                        EnderecoIP = Request.HttpContext.Connection.RemoteIpAddress.ToString(),
+                        Data = DateTime.Now.ToShortDateString(),
+                        Horario = DateTime.Now.ToLongTimeString(),
+                    };
+
+                    _context.Add(informacao);
+                    await _context.SaveChangesAsync();
+
+                    HttpContext.Session.SetInt32("UsuarioId", id);
+
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.Email,login.Email)
+                    };
+
+                    var userIdentity = new ClaimsIdentity(claims, "login");
+                    ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
+                    await HttpContext.SignInAsync(principal);
+
+                    return RedirectToAction("Index", "Curriculos");
+                }
+            }
+
+            return View(login);
+        }
+
         private bool UsuarioExists(int id)
         {
             return _context.Usuarios.Any(e => e.UsuarioId == id);
