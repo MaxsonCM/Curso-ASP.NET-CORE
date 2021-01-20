@@ -31,10 +31,19 @@
         </li>
         @await Component.InvokeAsync("ExperienciasProfissionais", Model.CurriculoId)
     </ul>
+    
+    <ul class="collection with-header">
+        <li class="collection-header">
+            <h5>
+                Idiomas  <a asp-action="Create" asp-controller="Idiomas" asp-route-id="@Model.CurriculoId" class="btn-floating btn-small blue darken-4"><i class="material-icons">add</i></a>
+            </h5>
+        </li>
+        @await Component.InvokeAsync("Idiomas", Model.CurriculoId)
+    </ul>
+
 </div>
 
 
-<!-- Modal Structure -->
 <div id="modal_exclusao" class="modal">
     <div class="modal-content">
         <h4>Confirmar exclusão</h4>
