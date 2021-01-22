@@ -12,7 +12,7 @@ namespace MontagemCurriculo.Mapeamento
     {
         public void Configure(EntityTypeBuilder<Idioma> builder)
         {
-            builder.HasKey(i => i.CurriculoId);
+            builder.HasKey(i => i.IdiomaId);
 
             builder.Property(i => i.Nome).IsRequired().HasMaxLength(50);
             builder.HasIndex(i => i.Nome).IsUnique();

@@ -134,14 +134,15 @@ namespace MontagemCurriculo.Migrations
                 name: "Idiomas",
                 columns: table => new
                 {
-                    IdiomaId = table.Column<int>(nullable: false),
+                    IdiomaId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Nome = table.Column<string>(maxLength: 50, nullable: false),
                     Nivel = table.Column<string>(maxLength: 50, nullable: false),
                     CurriculoId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Idiomas", x => x.CurriculoId);
+                    table.PrimaryKey("PK_Idiomas", x => x.IdiomaId);
                     table.ForeignKey(
                         name: "FK_Idiomas_Curriculos_CurriculoId",
                         column: x => x.CurriculoId,
@@ -195,6 +196,11 @@ namespace MontagemCurriculo.Migrations
                 name: "IX_FormacoesAcademicas_TipoCursoId",
                 table: "FormacoesAcademicas",
                 column: "TipoCursoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Idiomas_CurriculoId",
+                table: "Idiomas",
+                column: "CurriculoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Idiomas_Nome",

@@ -1,11 +1,11 @@
-﻿@model MontagemCurriculo.Models.Objetivo
+﻿@model MontagemCurriculo.Models.Idioma
 
 @{
-    ViewData["Title"] = "Novo Objetivo";
+    ViewData["Title"] = "Novo Idioma";
 }
 
 <div class="formulario">
-    <h5>Novo Objetivo</h5>
+    <h5>Novo Idioma</h5>
     <hr />
     <div class="row">
         <div class="col-md-4">
@@ -15,9 +15,17 @@
 
                 <div class="row">
                     <div class="input-field col s6">
-                        <input asp-for="Descricao" id="Descricao" class="validate" />
-                        <label for="Descricao">Descrição</label>
-                        <span asp-validation-for="Descricao" class="red-text darken-3"></span>
+                        <input asp-for="Nome" id="Nome" class="validate" />
+                        <label for="Nome">Nome</label>
+                        <span asp-validation-for="Nome" class="red-text darken-3"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input asp-for="Nivel" id="Nivel" class="validate" />
+                        <label for="Nivel">Nível</label>
+                        <span asp-validation-for="Nivel" class="red-text darken-3"></span>
                     </div>
                 </div>
 
@@ -30,4 +38,3 @@
         </div>
     </div>
 </div>
-

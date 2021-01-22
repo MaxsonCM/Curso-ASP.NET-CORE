@@ -6,12 +6,13 @@
 
 <div class="formulario">
 
-    <h4>Atualizar objetivo</h4>
+    <h5>Atualizar objetivo</h5>
     <hr />
     <div class="row">
         <div class="col-md-4">
             <form asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input asp-for="CurriculoId" type="hidden" />
                 <input type="hidden" asp-for="ObjetivoId" />
 
                 <div class="row">
@@ -21,7 +22,7 @@
                         <span asp-validation-for="Descricao" class="red-text darken-3"></span>
                     </div>
                 </div>
-                <input asp-for="CurriculoId" type="hidden" />
+                
                 <div class="row">
                     <input type="submit" value="Atualizar" class="btn btn-small green darken-1" /> &nbsp;
                     <a asp-action="Details" asp-controller="Curriculos" asp-route-id="@Model.CurriculoId">Voltar</a>

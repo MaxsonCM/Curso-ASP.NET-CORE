@@ -9,7 +9,7 @@ using MontagemCurriculo.Models;
 namespace MontagemCurriculo.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20201223095447_criacaoDB")]
+    [Migration("20210122102457_criacaoDB")]
     partial class criacaoDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -106,9 +106,11 @@ namespace MontagemCurriculo.Migrations
 
             modelBuilder.Entity("MontagemCurriculo.Models.Idioma", b =>
                 {
-                    b.Property<int>("CurriculoId");
+                    b.Property<int>("IdiomaId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("IdiomaId");
+                    b.Property<int>("CurriculoId");
 
                     b.Property<string>("Nivel")
                         .IsRequired()
@@ -118,7 +120,9 @@ namespace MontagemCurriculo.Migrations
                         .IsRequired()
                         .HasMaxLength(50);
 
-                    b.HasKey("CurriculoId");
+                    b.HasKey("IdiomaId");
+
+                    b.HasIndex("CurriculoId");
 
                     b.HasIndex("Nome")
                         .IsUnique();
